@@ -2,7 +2,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import Home from './pages/HomePgae';
+import Home from './pages/HomePage';
 import Posts from './pages/Posts';
 import Header from './components/Header';
 
