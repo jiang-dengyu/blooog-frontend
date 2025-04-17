@@ -1,0 +1,81 @@
+.home-container {
+  margin-top: 150px;
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: 70%;
+  grid-gap: 20px 0;
+  justify-content: center;
+
+}
+
+.home-container section {
+  /*位置*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*細節*/
+  background-color: #e4e4d4;
+  font-family: 'Open Sans';
+  font-size: 30px;
+  color: #020028;
+  text-align: center;
+  border-radius: 10px;
+  min-height: 300px;
+}
+
+.section.welcome-section {
+  /*細節*/
+  background-color: #242424;
+}
+
+.welcome-container {
+  /*位置*/
+  display: flex;
+  flex: auto;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  /*細節*/
+  max-width: 1200px;
+  min-height: 300px;
+  margin: 0;
+}
+
+.welcome-left {
+  /*位置*/
+  flex: 1;
+  text-align: left;
+  /*範圍*/
+  min-height: 300px;
+  /*細節*/
+  background-color: #e4e4d4;
+  border: 2px solid #ff3636aa;
+}
+
+.welcome-right {
+  /*位置*/
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*範圍*/
+  min-height: 300px;
+  /*細節*/
+  background-color: #e4e4d4;
+  border: 2px solid #36ff8aaa;
+
+}
+
+.avatar-placeholder {
+  /*位置*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*範圍*/
+  width: 200px;
+  height: 100%;
+  /*細節*/
+  background-color: #aaaa;
+  border-radius: 3px;
+  font-weight: bold;
+}

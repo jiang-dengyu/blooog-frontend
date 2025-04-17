@@ -1,4 +1,4 @@
-
+import '../styles/HomePage.css'
 function Home() {
   return (
     <div className="home-container">
