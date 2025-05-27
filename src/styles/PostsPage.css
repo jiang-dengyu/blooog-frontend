@@ -1,0 +1,8 @@
+/*src\styles\PostsPage.css*/
+.posts-page {
+  color: white;
+  background-color: #222;
+  padding: 2rem;
+  /* 避開固定 header 的高度 */
+  margin-top: 80px;
+}
