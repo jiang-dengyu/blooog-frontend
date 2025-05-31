@@ -14,6 +14,7 @@ function App() {
         <Route path="/posts" element={<Posts />} />
       </Routes>
     </BrowserRouter>
+  )
 }
 
 export default App
