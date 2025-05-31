@@ -1,5 +1,5 @@
 import './App.css'
-import { HashRouter, BrowserRouter, Routes, Route } from "react-router-dom"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Home from './pages/HomePage';
 import Posts from './pages/PostsPage';
 import Header from './components/Header';
@@ -7,14 +7,13 @@ import Header from './components/Header';
 function App() {
 
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/posts" element={<Posts />} />
       </Routes>
-    </HashRouter>
-  )
+    </BrowserRouter>
 }
 
 export default App
