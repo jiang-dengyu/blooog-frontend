@@ -6,7 +6,7 @@
   grid-template-columns: 70%;
   grid-gap: 100px 0;
   justify-content: center;
-
+  background-color: #242323;
 }
 
 .home-container section {
@@ -111,41 +111,92 @@
   align-items: center;
   gap: 30px;
   /*細節*/
-  background-color: #242424;
+  background-color: #848484;
   font-weight: bold;
   color: azure;
-
 }
 
 .Skills-title {
+  /*位置*/
+  display: flex;
+  align-items: center;
+  flex: 0.8;
   /*細節*/
+  font-size: 3rem;
+  font-family: 'Orbitron', sans-serif;
 }
 
 .Skills-grid {
+  /*位置*/
+  flex: 1;
   /*排版*/
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 50px;
   /*細節*/
+  align-items: center;
   font-size: 2rem;
+  font-family: Georgia, serif;
+}
+
+.Skills-grid div {
+  /*排版*/
+  display: flex;
+  flex-direction: column;
+  /*位置*/
+  align-items: center;
+  justify-content: center;
+  min-width: 160px;
+  gap: 10px;
+}
+
+.Skills-grid img {
+  width: 40px;
+  height: 40px
 }
 
 .section.experience-section {
   /*排版*/
+  display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  gap: 40px;
   /*細節*/
-  background-color: #270505;
+  background-color: #848484;
   font-weight: bold;
   color: rgb(255, 246, 219);
+  font-size: 2rem;
+  font-family: 'Orbitron', sans-serif;
 }
 
 .experience-title {
+  /*位置*/
+  display: flex;
+  align-items: center;
+  flex: 0.8;
   /*細節*/
+  font-size: 3rem;
+  font-family: 'Orbitron', sans-serif;
 }
 
 .experience-grid {
+  /*位置*/
+  flex: 1;
+  /*排版*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
   /*細節*/
+  align-items: center;
+  font-size: 2rem;
+  font-family: Georgia, serif;
+}
+
+.experience-grid img {
+  /*細節*/
+  width: 50px;
+  height: 50px
 }
