@@ -1,12 +1,12 @@
 .home-container {
-  margin-top: 150px;
+  margin-top: 120px;
   margin-bottom: 50px;
   /*gird排版*/
   display: grid;
   grid-template-columns: 70%;
   grid-gap: 100px 0;
   justify-content: center;
-  background-color: #242323;
+  background-color: #ffffff;
 }
 
 .home-container section {
@@ -52,7 +52,7 @@
   /*位置*/
   flex: 4;
   text-align: left;
-  justify-content: space-between;
+  justify-content: space-around;
   /*範圍*/
   min-height: 300px;
   /*細節*/
@@ -62,12 +62,12 @@
 .welcome-left h2 {
   /*細節*/
 
-  font-size: 60px;
+  font-size: 50px;
 }
 
 .welcome-left p {
   /*細節*/
-  font-size: 60px;
+  font-size: 50px;
 }
 
 
