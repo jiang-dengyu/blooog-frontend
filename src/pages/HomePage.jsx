@@ -1,4 +1,6 @@
+/*src\pages\HomePage.jsx*/
 import '../styles/HomePage.css'
+import avatar from '../assets/avatar_1.jpg';
 function Home() {
   return (
     <div className="home-container">
@@ -7,30 +9,40 @@ function Home() {
         <div className="welcome-container">
           <div className="welcome-left">
             <h2>Hi! I'm Jiang</h2>
-            <p>A Backend Engineer</p>
-            <p>Welcome To My Portfolio, Blooog!</p>
+            <p>Welcome to My Portfolio,</p>
+            <p>Blooog!</p>
           </div>
           <div className="welcome-right">
-            <div className="avatar-placeholder">[Avatar]</div>
+            <div className="avatar-placeholder">
+              <img src={avatar} alt="avatar"></img>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Section 2: Projects */}
-      <section className="section project-section">
-        <div className="project-title">
-          <h2>The Projects I Did</h2>
+      {/* Section 2: Skills */}
+      <section className="section Skills-section">
+        <div className="Skills-title">
+          <h2>The Skills or Tools</h2>
         </div>
-        <div className="project-grid">
-          <div className="project-box">Project 1</div>
-          <div className="project-box">Project 2</div>
-          <div className="project-box">Project 3</div>
+        <div className="Skills-grid">
+          <div><i><span>Laravel</span></i></div>
+          <div><i><span>Fastapi</span></i></div>
+          <div><i><span>Express.js</span></i></div>
+          <div><i><span>Mysql</span></i></div>
+          <div><i><span>React</span></i></div>
+          <div><i><span>Docker</span></i></div>
         </div>
       </section>
 
       {/* Section 3: Experiences */}
       <section className="section experience-section">
-        <h2>Experiences</h2>
+        <div className="experience-title">
+          <h2>Experiences</h2>
+        </div>
+        <div className="experience-grid">
+          <span>Nothing yet here~</span>
+        </div>
       </section>
     </div>
   );
