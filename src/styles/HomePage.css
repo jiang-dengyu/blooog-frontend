@@ -1,11 +1,12 @@
 .home-container {
-  margin-top: 150px;
+  margin-top: 120px;
   margin-bottom: 50px;
+  /*gird排版*/
   display: grid;
   grid-template-columns: 70%;
-  grid-gap: 20px 0;
+  grid-gap: 100px 0;
   justify-content: center;
-
+  background-color: #ffffff;
 }
 
 .home-container section {
@@ -25,7 +26,9 @@
 
 .section.welcome-section {
   /*細節*/
-  background-color: #242424;
+  background-color: #ffffff;
+  justify-content: space-between;
+  margin: 0;
 }
 
 .welcome-container {
@@ -33,7 +36,6 @@
   display: flex;
   flex: auto;
   align-items: center;
-  justify-content: space-between;
   gap: 2rem;
   /*細節*/
   max-width: 1200px;
@@ -42,15 +44,32 @@
 }
 
 .welcome-left {
+  /*flex排版*/
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
   /*位置*/
-  flex: 1;
+  flex: 4;
   text-align: left;
+  justify-content: space-around;
   /*範圍*/
   min-height: 300px;
   /*細節*/
-  background-color: #e4e4d4;
-  border: 2px solid #ff3636aa;
+  font-family: 'Orbitron', sans-serif;
 }
+
+.welcome-left h2 {
+  /*細節*/
+
+  font-size: 50px;
+}
+
+.welcome-left p {
+  /*細節*/
+  font-size: 50px;
+}
+
 
 .welcome-right {
   /*位置*/
@@ -61,9 +80,6 @@
   /*範圍*/
   min-height: 300px;
   /*細節*/
-  background-color: #e4e4d4;
-  border: 2px solid #36ff8aaa;
-
 }
 
 .avatar-placeholder {
@@ -72,10 +88,115 @@
   align-items: center;
   justify-content: center;
   /*範圍*/
-  width: 200px;
-  height: 100%;
+  width: 300px;
+  height: 300px;
   /*細節*/
   background-color: #aaaa;
   border-radius: 3px;
   font-weight: bold;
+}
+
+.avatar-placeholder img {
+  /*位置*/
+  display: block;
+  /*範圍*/
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section.Skills-section {
+  /*排版*/
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  /*細節*/
+  background-color: #848484;
+  font-weight: bold;
+  color: azure;
+}
+
+.Skills-title {
+  /*位置*/
+  display: flex;
+  align-items: center;
+  flex: 0.8;
+  /*細節*/
+  font-size: 3rem;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.Skills-grid {
+  /*位置*/
+  flex: 1;
+  /*排版*/
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  /*細節*/
+  align-items: center;
+  font-size: 2rem;
+  font-family: Georgia, serif;
+}
+
+.Skills-grid div {
+  /*排版*/
+  display: flex;
+  flex-direction: column;
+  /*位置*/
+  align-items: center;
+  justify-content: center;
+  min-width: 160px;
+  gap: 10px;
+}
+
+.Skills-grid img {
+  width: 40px;
+  height: 40px
+}
+
+.section.experience-section {
+  /*排版*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  /*細節*/
+  background-color: #848484;
+  font-weight: bold;
+  color: rgb(255, 246, 219);
+  font-size: 2rem;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.experience-title {
+  /*位置*/
+  display: flex;
+  align-items: center;
+  flex: 0.8;
+  /*細節*/
+  font-size: 3rem;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.experience-grid {
+  /*位置*/
+  flex: 1;
+  /*排版*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  /*細節*/
+  align-items: center;
+  font-size: 2rem;
+  font-family: Georgia, serif;
+}
+
+.experience-grid img {
+  /*細節*/
+  width: 50px;
+  height: 50px
 }

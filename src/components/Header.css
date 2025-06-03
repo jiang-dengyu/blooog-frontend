@@ -4,33 +4,35 @@
   top: 0;
   left: 0;
   right: 0;
-  background-color: #e4e4d4;
+  background-color: #556c81;
   /* 米色 */
-  color: black;
+  color: rgb(252, 252, 252);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  box-shadow: 0 2px 4px #c234c7;
+  box-shadow: 0 1px 2px #696969;
   z-index: 1000;
+  font-family: 'Orbitron', sans-serif;
 }
 
 .logo {
-  font-size: 1.5rem;
+  font-size: 3rem;
   font-weight: bold;
   text-decoration: none;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 .header-right {
+  font-size: 25px;
   display: flex;
-  gap: 1rem;
+  gap: 30px ;
   align-items: center;
 }
 
 .nav-link {
   text-decoration: none;
-  color: black;
+  color: rgb(255, 255, 255);
   font-weight: 500;
 }
 
