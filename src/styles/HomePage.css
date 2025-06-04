@@ -16,17 +16,17 @@
   /*細節*/
   font-family: 'Open Sans';
   font-size: 30px;
-  color: #020028;
+  color: #ffc020;
   text-align: center;
-  border-radius: 10px;
   min-height: 300px;
+  border-radius: 20px;
 }
 
 .section.welcome-section {
   /*細節*/
   /* background-color: rgba(152, 152, 152, 0.75); */
   justify-content: space-between;
-  margin: 0;
+  margin-top: 80px;
 }
 
 .welcome-container {
@@ -54,19 +54,20 @@
   /*範圍*/
   min-height: 300px;
   /*細節*/
-  background-color: rgba(152, 152, 152, 0.75);
   font-family: 'Orbitron', sans-serif;
+  border-radius: 20px;
 }
 
 .welcome-left h2 {
   /*細節*/
-
+  background-color: rgba(152, 152, 152, 0.75);
   font-size: 50px;
 }
 
 .welcome-left p {
   /*細節*/
-  font-size: 50px;
+  background-color: rgba(152, 152, 152, 0.75);
+  font-size: 30px;
 }
 
 
@@ -90,8 +91,6 @@
   width: 300px;
   height: 300px;
   /*細節*/
-  background-color: rgba(152, 152, 152, 0.75);
-  border-radius: 3px;
   font-weight: bold;
 }
 
@@ -102,6 +101,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 50%;
 }
 
 .section.Skills-section {
@@ -167,6 +167,7 @@
   color: rgb(255, 246, 219);
   font-size: 2rem;
   font-family: 'Orbitron', sans-serif;
+  margin-bottom: 80px;
 }
 
 .experience-title {

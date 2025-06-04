@@ -23,8 +23,8 @@ function Home() {
         <div className="welcome-container">
           <div className="welcome-left">
             <h2>Hi! I'm Jiang.</h2>
-            <p>Welcome to My Portfolio,</p>
-            <p>Blooog!</p>
+            <h2>Welcome to My Blooog~</h2>
+            <p>A place for my notes, and for you to get to know me</p>
           </div>
           <div className="welcome-right">
             <div className="avatar-placeholder">
