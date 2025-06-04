@@ -1,12 +1,11 @@
 .home-container {
-  margin-top: 120px;
+  margin-top: 80px;
   margin-bottom: 50px;
   /*gird排版*/
   display: grid;
   grid-template-columns: 70%;
   grid-gap: 100px 0;
   justify-content: center;
-  background-color: #ffffff;
 }
 
 .home-container section {
@@ -15,7 +14,6 @@
   justify-content: center;
   align-items: center;
   /*細節*/
-  background-color: #e4e4d4;
   font-family: 'Open Sans';
   font-size: 30px;
   color: #020028;
@@ -26,7 +24,7 @@
 
 .section.welcome-section {
   /*細節*/
-  background-color: #ffffff;
+  /* background-color: rgba(152, 152, 152, 0.75); */
   justify-content: space-between;
   margin: 0;
 }
@@ -56,6 +54,7 @@
   /*範圍*/
   min-height: 300px;
   /*細節*/
+  background-color: rgba(152, 152, 152, 0.75);
   font-family: 'Orbitron', sans-serif;
 }
 
@@ -91,7 +90,7 @@
   width: 300px;
   height: 300px;
   /*細節*/
-  background-color: #aaaa;
+  background-color: rgba(152, 152, 152, 0.75);
   border-radius: 3px;
   font-weight: bold;
 }
@@ -111,7 +110,7 @@
   align-items: center;
   gap: 30px;
   /*細節*/
-  background-color: #848484;
+  background-color: rgba(152, 152, 152, 0.75);
   font-weight: bold;
   color: azure;
 }
@@ -163,7 +162,7 @@
   align-items: center;
   gap: 40px;
   /*細節*/
-  background-color: #848484;
+  background-color: rgba(152, 152, 152, 0.75);
   font-weight: bold;
   color: rgb(255, 246, 219);
   font-size: 2rem;
