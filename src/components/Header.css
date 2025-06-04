@@ -17,28 +17,20 @@
 }
 
 .logo {
-  font-size: 3rem;
+  font-size: 25px;
   font-weight: bold;
   text-decoration: none;
   color: rgb(255, 255, 255);
 }
 
 .header-right {
-  font-size: 25px;
+  font-size: 20px;
   display: flex;
-  gap: 30px ;
+  gap: 30px;
   align-items: center;
 }
 
 .nav-link {
   text-decoration: none;
   color: rgb(255, 255, 255);
-  font-weight: 500;
-}
-
-.lang-switch {
-  background: none;
-  border: none;
-  font-size: 1rem;
-  cursor: pointer;
 }
