@@ -3,14 +3,14 @@ import { useState } from 'react';
 import '../styles/PostsPage.css';
 import bg from '../assets/background_NotesPage.jpg';
 const allPosts = [
-  { title: "文章1標題", content: "內容簡述1...", tags: ["React", "前端"], author: "Jiang", date: "2024-06-01" },
-  { title: "文章2標題", content: "內容簡述2...", tags: ["Laravel", "後端"], author: "Jiang", date: "2024-05-31" },
-  { title: "文章3標題", content: "內容簡述3...", tags: ["FastAPI", "Python"], author: "Jiang", date: "2024-05-30" },
-  { title: "文章4標題", content: "內容簡述4...", tags: ["MySQL", "資料庫"], author: "Jiang", date: "2024-05-29" },
-  { title: "文章5標題", content: "內容簡述5...", tags: ["Docker", "DevOps"], author: "Jiang", date: "2024-05-28" },
-  { title: "文章6標題", content: "內容簡述6...", tags: ["Git", "版本控制"], author: "Jiang", date: "2024-05-27" },
-  { title: "文章7標題", content: "內容簡述7...", tags: ["HTML", "CSS"], author: "Jiang", date: "2024-05-26" },
-  { title: "文章8標題", content: "內容簡述8...", tags: ["JavaScript", "前端"], author: "Jiang", date: "2024-05-25" },
+  { title: "文章標題Post Title 1", content: "This is a brief summary of post 1...", tags: ["React", "Frontend"], author: "Jiang", date: "2024-06-01" },
+  { title: "文章標題Post Title 2", content: "This is a brief summary of post 2...", tags: ["Laravel", "Backend"], author: "Jiang", date: "2024-05-31" },
+  { title: "文章標題Post Title 3", content: "This is a brief summary of post 3...", tags: ["FastAPI", "Python"], author: "Jiang", date: "2024-05-30" },
+  { title: "文章標題Post Title 4", content: "This is a brief summary of post 4...", tags: ["MySQL", "Database"], author: "Jiang", date: "2024-05-29" },
+  { title: "文章標題Post Title 5", content: "This is a brief summary of post 5...", tags: ["Docker", "DevOps"], author: "Jiang", date: "2024-05-28" },
+  { title: "文章標題Post Title 6", content: "This is a brief summary of post 6...", tags: ["Git", "Version Control"], author: "Jiang", date: "2024-05-27" },
+  { title: "文章標題Post Title 7", content: "This is a brief summary of post 7...", tags: ["HTML", "CSS"], author: "Jiang", date: "2024-05-26" },
+  { title: "文章標題Post Title 8", content: "This is a brief summary of post 8...", tags: ["JavaScript", "Frontend"], author: "Jiang", date: "2024-05-25" },
 ];
 
 function Posts() {
@@ -31,7 +31,7 @@ function Posts() {
       <div className="posts-wrapper">
 
         <div className="title-section">
-          <h1>文章總覽</h1>
+          <h1>Posts Overview</h1>
           <div className="options-container">
             <h3>各種功能</h3>
             <h3>全部文章</h3>
@@ -56,7 +56,7 @@ function Posts() {
                 ))}
               </div>
               <div className="article-information">
-                <span>技術類</span>
+                <span>Category</span>
                 <span>{post.date}</span>
                 <span>{post.author}</span>
               </div>
