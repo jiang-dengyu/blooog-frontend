@@ -1,9 +1,8 @@
 /*src\styles\PostsPage.css*/
 .posts-page {
   /*位置*/
-  margin-top: 80px;
-  padding: 2rem;
-  height: 500px;
+  /* margin-top: 80px; */
+  padding-top: 120px;
   min-height: 100vh;
   /*細節*/
   color: #6d7bff;
@@ -13,7 +12,7 @@
 .posts-wrapper {
   width: 70%;
   max-width: 1200px;
-  color: #ffa9a9;
+  color: rgb(255, 192, 32);
   margin: auto;
 }
 
@@ -33,10 +32,11 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 1rem;
+  color: rgb(1, 1, 1);
 }
 
 .options-container h3 {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 1);
   padding: 0.5rem 1rem;
   border-radius: 8px;
   cursor: pointer;
@@ -60,6 +60,7 @@
   background-color: rgba(255, 255, 255, 0.8);
   padding: 1.5rem;
   border-radius: 12px;
+  gap: 15px;
   display: flex;
   flex-direction: column;
   transition: transform 0.2s ease;
