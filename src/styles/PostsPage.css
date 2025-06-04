@@ -1,8 +1,10 @@
 /*src\styles\PostsPage.css*/
 .posts-page {
-  color: white;
+  color: rgb(83, 30, 30);
   background-color: #222;
   padding: 2rem;
   /* 避開固定 header 的高度 */
   margin-top: 80px;
+  /*位置*/
+  height: 500px;
 }
