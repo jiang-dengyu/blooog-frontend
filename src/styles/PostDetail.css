@@ -1,0 +1,41 @@
+.post-detail {
+  /*排版*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.post-detail h1 {
+  /*位置*/
+  justify-content: center;
+  margin: 10rem 15rem 3rem 15rem;
+  text-align: center;
+  /*細節*/
+  font-size: 50px;
+  background-color: rgba(255, 151, 151, 0.25);
+}
+
+.meta-row {
+  /*排版*/
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+  justify-content: center;
+  /*位置*/
+  margin: 3rem 15rem 0 15rem;
+  background-color: rgba(255, 151, 151, 0.25);
+}
+
+.meta-row span {
+  /*細節*/
+  font-size: 20px;
+}
+
+.content {
+  margin: 3rem 15rem 8rem 15rem;
+  max-width: 1200px;
+  /*細節*/
+  font-size: 30px;
+  background-color: rgb(255, 255, 255);
+}
