@@ -34,11 +34,13 @@ function Posts() {
         <div className="title-section">
           <h1>Posts Overview</h1>
           <div className="options-container">
-            <h3>各種功能</h3>
-            <h3>全部文章</h3>
-            <h3>最近更新</h3>
-            <h3>最新文章</h3>
-            <h3>最舊文章</h3>
+            <h3>All</h3>
+            <h3>Updated recently</h3>
+            <h3>Newest</h3>
+            <h3>Oldest</h3>
+            <Link to={`/posts/new`} className="newpost-link">
+              <h3>Write a New One</h3>
+            </Link>
           </div>
         </div>
 
