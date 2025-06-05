@@ -1,6 +1,6 @@
 /*src\components\Header.jsx*/
 import { Link } from 'react-router-dom';
-import './Header.css';
+import '../styles/components/Header.css';
 
 function Header() {
   return (
