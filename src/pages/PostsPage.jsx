@@ -1,5 +1,6 @@
 /*src\pages\PostsPage.jsx*/
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/PostsPage.css';
 import bg from '../assets/background_NotesPage.jpg';
 const allPosts = [
@@ -33,34 +34,38 @@ function Posts() {
         <div className="title-section">
           <h1>Posts Overview</h1>
           <div className="options-container">
-            <h3>各種功能</h3>
-            <h3>全部文章</h3>
-            <h3>最近更新</h3>
-            <h3>最新文章</h3>
-            <h3>最舊文章</h3>
+            <h3>All</h3>
+            <h3>Updated recently</h3>
+            <h3>Newest</h3>
+            <h3>Oldest</h3>
+            <Link to={`/posts/new`} className="newpost-link">
+              <h3>Write a New One</h3>
+            </Link>
           </div>
         </div>
 
         <div className="posts-section">
           {currentPosts.map((post, index) => (
-            <div className="post-container" key={index}>
-              <div className="article-brief">
-                <p>{post.content}</p>
+            <Link to={`/posts/${startIdx + index}`} className="post-container-link">
+              <div className="post-container" key={index}>
+                <div className="article-brief">
+                  <p>{post.content}</p>
+                </div>
+                <div className="article-title">
+                  <h2>{post.title}</h2>
+                </div>
+                <div className="article-tag">
+                  {post.tags.map((tag, i) => (
+                    <span key={i}>{tag}</span>
+                  ))}
+                </div>
+                <div className="article-information">
+                  <span>Category</span>
+                  <span>{post.date}</span>
+                  <span>{post.author}</span>
+                </div>
               </div>
-              <div className="article-title">
-                <h2>{post.title}</h2>
-              </div>
-              <div className="article-tag">
-                {post.tags.map((tag, i) => (
-                  <span key={i}>{tag}</span>
-                ))}
-              </div>
-              <div className="article-information">
-                <span>Category</span>
-                <span>{post.date}</span>
-                <span>{post.author}</span>
-              </div>
-            </div>
+            </Link>
           ))}
         </div>
         <div className="pagination-section">
