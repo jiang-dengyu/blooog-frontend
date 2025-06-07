@@ -44,7 +44,9 @@
   transition: background-color 1s ease;
   font-family: 'Orbitron', sans-serif;
 }
-
+.options-container h3.active {
+  background-color: rgba(255, 192, 32, 0.8);
+}
 .options-container h3:hover {
   background-color: rgba(255, 192, 32, 0.8);
 }
