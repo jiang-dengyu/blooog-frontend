@@ -1,5 +1,5 @@
 import './App.css'
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { HashRouter, BrowserRouter, Routes, Route } from "react-router-dom"
 import Home from './pages/HomePage';
 import Posts from './pages/PostsPage';
 import PostDetail from './pages/PostDetail';
@@ -11,7 +11,7 @@ import Footer from './components/Footer';
 function App() {
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -21,7 +21,7 @@ function App() {
         <Route path="/gallery" element={<Gallery />} />
       </Routes>
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
