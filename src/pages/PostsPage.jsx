@@ -16,11 +16,20 @@ const allPosts = [
 
 function Posts() {
   const [currentPage, setCurrentPage] = useState(1);
-  const postsPerPage = 4;
+  const [sortOrder, setSortOrder] = useState('newest');
+  const sortedPosts = allPosts.slice().sort((a, b) => {
+    if (sortOrder === 'newest') {
+      return new Date(b.date) - new Date(a.date);
+    } else {
+      return new Date(a.date) - new Date(b.date);
+    }
+  });
 
-  const totalPages = Math.ceil(allPosts.length / postsPerPage);
+  const postsPerPage = 4;
+  const totalPages = Math.ceil(sortedPosts.length / postsPerPage);
   const startIdx = (currentPage - 1) * postsPerPage;
-  const currentPosts = allPosts.slice(startIdx, startIdx + postsPerPage);
+  const currentPosts = sortedPosts.slice(startIdx, startIdx + postsPerPage);
+
   return (
     <div className="posts-page" style={{
       backgroundImage: `url(${bg})`,
@@ -34,10 +43,10 @@ function Posts() {
         <div className="title-section">
           <h1>Posts Overview</h1>
           <div className="options-container">
-            <h3>All</h3>
-            <h3>Updated recently</h3>
-            <h3>Newest</h3>
-            <h3>Oldest</h3>
+            <h3 className={sortOrder === 'all' ? 'active' : ''} onClick={() => setSortOrder('all')}>All</h3>
+            <h3 className={sortOrder === 'updated' ? 'active' : ''} onClick={() => setSortOrder('updated')}>Updated recently</h3>
+            <h3 className={sortOrder === 'newest' ? 'active' : ''} onClick={() => setSortOrder('newest')}>Newest</h3>
+            <h3 className={sortOrder === 'oldest' ? 'active' : ''} onClick={() => setSortOrder('oldest')}>Oldest</h3>
             <Link to={`/posts/new`} className="newpost-link">
               <h3>Write a New One</h3>
             </Link>
