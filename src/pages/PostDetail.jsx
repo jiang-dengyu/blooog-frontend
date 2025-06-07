@@ -13,13 +13,7 @@ function PostDetail() {
   if (!post) return <div>找不到文章</div>;
 
   return (
-    <div className="post-detail" style={{
-      backgroundImage: `url(${bg})`,
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      backgroundRepeat: 'no-repeat',
-      backgroundAttachment: 'fixed'
-    }}>
+    <div className="post-detail" >
       <h1>{post.title}</h1>
       <div className="meta-row">
         <span className="category">Category</span>
