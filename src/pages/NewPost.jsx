@@ -24,13 +24,7 @@ function NewPost() {
     console.log('New post:', newPost); // 未來改後端儲存API
   };
   return (
-    <div className="new-post-page" data-color-mode="light" style={{
-      backgroundImage: `url(${bg})`,
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      backgroundRepeat: 'no-repeat',
-      backgroundAttachment: 'fixed'
-    }}>
+    <div className="new-post-page" data-color-mode="light" >
       <h1>Create a New Post</h1>
 
       <form onSubmit={handleSubmit} className="new-post-form">
