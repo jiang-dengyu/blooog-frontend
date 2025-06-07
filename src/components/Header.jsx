@@ -10,10 +10,8 @@ function Header() {
       </div>
       <div className="header-right">
         {/* <button className="lang-switch">🌐</button> */}
-        <Link to="/#experience" className="nav-link">Experiences</Link>
-        <Link to="/#project" className="nav-link">Project</Link>
-        <Link to="/#about" className="nav-link">About</Link>
         <Link to="/posts" className="nav-link">Note</Link>
+        <Link to="/gallery" className="nav-link">Gallery</Link>
       </div>
     </header>
   );

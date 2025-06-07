@@ -1,0 +1,88 @@
+/*src/styles/Gallery.css*/
+.gallery-section {
+  /*排版*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*位置*/
+  gap: 3rem;
+  /*細節*/
+  background-color: rgb(171, 171, 171);
+  padding: 2rem;
+}
+.gallery-title{
+    /*排版*/
+    /*位置*/
+    margin-top: 50px;
+    text-align: center;
+    /*細節*/
+    text-align: center;
+    font-size: 50px;
+    color: rgb(255, 192, 32);
+    font-family: 'Orbitron', sans-serif;
+    cursor: pointer;
+    user-select: none;
+}
+/* === 九宮格顯示 === */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+}
+.grid-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.grid-img:hover {
+  transform: scale(1.05);
+}
+
+/* === 單張顯示 === */
+.gallery-photo {
+  text-align: center;
+  padding: 1rem;
+  background-color: rgb(255, 255, 255);
+}
+
+.main-img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.gallery-pagination {
+  text-align: center;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.thumb-img {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.thumb-img:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+.thumb-img.active {
+  border: 3px solid #333;
+  opacity: 1;
+}
