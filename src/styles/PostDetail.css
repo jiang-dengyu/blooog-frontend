@@ -1,3 +1,4 @@
+/*src\styles\PostDetail.css*/
 .post-detail {
   /*排版*/
   display: flex;
@@ -57,4 +58,35 @@
   /*細節*/
   font-size: 30px;
   background-color: rgba(255, 255, 255, 0.8);
+}
+
+/****rwd手機****/
+@media (max-width: 768px) {
+  .post-detail h1 {
+    margin: 4rem 1rem 2rem 1rem;
+    font-size: 2rem;
+  }
+
+  .meta-row {
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem;
+  }
+
+  .meta-row span {
+    font-size: 1rem;
+    padding: 0.3rem 0.8rem;
+  }
+
+  .meta-row button {
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .content {
+    margin: 2rem 1rem 4rem 1rem;
+    font-size: 1.1rem;
+    padding: 1rem;
+    word-break: break-word;
+  }
 }

@@ -197,3 +197,66 @@
   width: 50px;
   height: 50px
 }
+
+/****rwd手機****/
+@media (max-width: 768px) {
+  .home-container {
+    grid-template-columns: 100%;
+    grid-gap: 60px 0;
+    padding: 0 1rem;
+  }
+
+  .welcome-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .welcome-left {
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .welcome-left h2 {
+    font-size: 2rem;
+  }
+
+  .welcome-left p {
+    font-size: 1.2rem;
+  }
+
+  .welcome-right {
+    min-height: auto;
+  }
+
+  .avatar-placeholder {
+    width: 200px;
+    height: 200px;
+  }
+
+  .Skills-title,
+  .experience-title {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .Skills-grid,
+  .experience-grid {
+    flex-direction: column;
+    gap: 30px;
+    font-size: 1.3rem;
+  }
+
+  .Skills-grid img,
+  .experience-grid img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .section {
+    flex-direction: column !important;
+    padding: 1rem 0;
+    min-height: auto;
+  }
+}
