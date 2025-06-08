@@ -10,19 +10,21 @@
   background-color: rgb(171, 171, 171);
   padding: 2rem;
 }
-.gallery-title{
-    /*排版*/
-    /*位置*/
-    margin-top: 50px;
-    text-align: center;
-    /*細節*/
-    text-align: center;
-    font-size: 50px;
-    color: rgb(255, 192, 32);
-    font-family: 'Orbitron', sans-serif;
-    cursor: pointer;
-    user-select: none;
+
+.gallery-title {
+  /*排版*/
+  /*位置*/
+  margin-top: 50px;
+  text-align: center;
+  /*細節*/
+  text-align: center;
+  font-size: 50px;
+  color: rgb(255, 192, 32);
+  font-family: 'Orbitron', sans-serif;
+  cursor: pointer;
+  user-select: none;
 }
+
 /* === 九宮格顯示 === */
 .gallery-grid {
   display: grid;
@@ -30,6 +32,7 @@
   gap: 1.5rem;
   padding: 1rem;
 }
+
 .grid-img {
   width: 100%;
   height: 200px;
@@ -53,9 +56,10 @@
 .main-img {
   width: 100%;
   max-width: 800px;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  max-height: 85vh;
+  /* 限制高度不超過畫面 70% */
+  object-fit: contain;
+  /* 內容完整呈現但不變形 */
 }
 
 .gallery-pagination {
