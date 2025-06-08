@@ -1,14 +1,23 @@
 /**src\pages\PostDetail.jsx*/
-import '../styles/PostDetail.css';
+import MarkdownPreview from '@uiw/react-markdown-preview'; //顯示md套件
+import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import allPosts from '../data/postsData'; // 將文章資料抽出共用
-import bg from '../assets/background_NotesPage.jpg';
+import '../styles/PostDetail.css';
+import allPosts from '../data/postsData'; // 假文章資料
+import articleMd from '../assets/articleSample.md?raw';
+
 
 
 function PostDetail() {
-  const { id } = useParams(); // id 為 index 或唯一 slug
+  const { id } = useParams(); // id 為 index
   const navigate = useNavigate();
   const post = allPosts[parseInt(id, 10)];
+
+  const [markdown, setMarkdown] = useState('');
+  useEffect(() => {
+    if (!post) return;
+    setMarkdown(articleMd); // 引入md檔案
+  }, [post]);
 
   if (!post) return <div>找不到文章</div>;
 
@@ -22,8 +31,7 @@ function PostDetail() {
         <button onClick={() => navigate(-1)}>返回</button>
       </div>
       <div className="content">
-        <p>{post.content}</p>
-        {/* 未來支援 markdown 可轉換此段 */}
+        <MarkdownPreview source={markdown} />
       </div>
     </div>
   );
