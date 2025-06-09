@@ -12,6 +12,7 @@
 .posts-wrapper {
   width: 70%;
   max-width: 1200px;
+  /*細節*/
   color: rgb(255, 192, 32);
   margin: auto;
 }
@@ -22,6 +23,8 @@
 }
 
 .title-section h1 {
+  /*細節*/
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
   font-size: 48px;
   font-family: 'Orbitron', sans-serif;
   margin-bottom: 1rem;
