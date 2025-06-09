@@ -1,5 +1,6 @@
 /*src\pages\HomePage.jsx*/
 import '../styles/HomePage.css'
+import TypingText from '../components/TypingText';
 import avatar from '../assets/avatar_1.jpg';
 import pythonIcon from '../assets/python.svg';
 import phpIcon from '../assets/php.svg';
@@ -8,6 +9,7 @@ import mysqlIcon from '../assets/mysql.svg';
 import dockerIcon from '../assets/docker.svg';
 import coffeeCup from '../assets/coffee-cup.png';
 import bg from '../assets/background.jpg';
+
 
 function Home() {
   return (
@@ -22,9 +24,9 @@ function Home() {
       <section className="section welcome-section">
         <div className="welcome-container">
           <div className="welcome-left">
-            <h2>Hi! I'm Jiang.</h2>
-            <h2>Welcome to My Blooog~</h2>
-            <p>A place for my notes, and for you to get to know me</p>
+            <TypingText text="Hi! I'm Jiang." speed={80} className="typing-h2" />
+            <TypingText text="Welcome to My Blooog~" speed={80} className="typing-h2" />
+            <TypingText text="A place for my notes, and for you to get to know me" speed={40} className="typing-p" />
           </div>
           <div className="welcome-right">
             <div className="avatar-placeholder">
