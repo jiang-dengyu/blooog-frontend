@@ -1,14 +1,17 @@
-/*src\components\TypingText.jsx*/
 import { useEffect, useState } from 'react';
 
-function TypingText({ text, speed = 100, className }) {
+function TypingText({ text = '', speed = 100, className }) {
   const [displayedText, setDisplayedText] = useState('');
 
   useEffect(() => {
-    let currentIndex = 0;
+    if (!text) return; // 防止 null / undefined
 
+    let currentIndex = 0;
     const timer = setInterval(() => {
-      setDisplayedText((prevText) => prevText + text[currentIndex]);
+      // 🧠 多加一層防呆，避免 undefined 被串進來
+      setDisplayedText((prevText) =>
+        prevText + (text[currentIndex] || '')
+      );
       currentIndex++;
 
       if (currentIndex >= text.length) {
