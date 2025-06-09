@@ -23,6 +23,7 @@
   font-family: 'Orbitron', sans-serif;
   cursor: pointer;
   user-select: none;
+  text-shadow: 3px 3px 2px rgb(0, 0, 0);
 }
 
 /* === 九宮格顯示 === */
