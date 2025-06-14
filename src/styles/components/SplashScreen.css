@@ -1,0 +1,57 @@
+/*src/styles/components/SplashScreen.css*/
+.splash-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgb(114, 108, 103);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: clip-path 1.5s ease-in-out;
+  cursor: pointer;
+  clip-path: circle(100% at center);
+  overflow: hidden;
+}
+
+.splash-screen.reveal {
+  clip-path: circle(0% at center);
+}
+
+.logo-animation {
+  font-size: 3rem;
+  font-family: 'Orbitron', sans-serif;
+  color: black;
+  pointer-events: none;
+  transition: opacity 3s ease-in-out;
+}
+
+.click-text {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: gray;
+  font-family: 'Open Sans', sans-serif;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+.splash-screen.reveal .click-text {
+  opacity: 0;
+}
+
+.cursor {
+  display: inline-block;
+  margin-left: 4px;
+  color: black;
+  animation: blink 1s step-end infinite;
+  font-weight: bold;
+}
+
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
+}
