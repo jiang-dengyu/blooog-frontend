@@ -1,25 +1,28 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 
 function TypingText({ text = '', speed = 100, className }) {
   const [displayedText, setDisplayedText] = useState('');
-
+  const indexRef = useRef(0);
+  const timerRef = useRef(null);
+  
   useEffect(() => {
-    if (!text) return; // 防止 null / undefined
+    if (!text) return;
+    setDisplayedText('');
+    indexRef.current = 0;
+    
+    timerRef.current = setInterval(() => {
+      const i = indexRef.current;
+    const nextChar = text[i] || '';
+    
+    setDisplayedText((prev) => prev + nextChar);
+    indexRef.current++;
 
-    let currentIndex = 0;
-    const timer = setInterval(() => {
-      // 🧠 多加一層防呆，避免 undefined 被串進來
-      setDisplayedText((prevText) =>
-        prevText + (text[currentIndex] || '')
-      );
-      currentIndex++;
-
-      if (currentIndex >= text.length) {
-        clearInterval(timer);
-      }
+    if (i >= text.length - 1) {
+      clearInterval(timerRef.current);
+    }
     }, speed);
 
-    return () => clearInterval(timer);
+    return () => clearInterval(timerRef.current);
   }, [text, speed]);
 
   return <p className={className}>{displayedText}</p>;
