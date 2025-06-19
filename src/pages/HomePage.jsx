@@ -26,7 +26,7 @@ function Home() {
           <div className="welcome-left">
             <TypingText text="Hi! I'm Jiang." speed={80} className="typing-h2" />
             <TypingText text="Welcome to My Blooog~" speed={80} className="typing-h2" />
-            <TypingText text="A place for my notes, and for you to get to know me" speed={40} className="typing-p" />
+            <TypingText text="A place for my notes, and for you to get to know me" speed={30} className="typing-p" />
           </div>
           <div className="welcome-right">
             <div className="avatar-placeholder">
