@@ -56,8 +56,20 @@ function Home() {
           <h2>Experiences</h2>
         </div>
         <div className="experience-grid">
-          <p>Nothing here yet~</p>
-          <img src={coffeeCup}></img>
+          <p>2024, Jul ~ now</p>
+          <p>
+            Backend Developer – Government Contract System(Laravel + MSSQL + Redis + Socket.io)
+          </p>
+          <ul>
+            <li>Maintained and improved key modules, including project start, schedule planning, and tender process</li>
+            <li>Developed new features, such as failed bidding handling</li>
+            <li>Assisted in debugging production issues (e.g., server errors, VM connection limits, WebSocket failures)</li>
+            <li>Helped stabilize real-time messaging using Laravel Echo with Redis and Socket.io</li>
+            <li>Proposed and implemented calendar API data backups, which helped during actual API downtime</li>
+            <li>Identified a database schema issue after incorrect production data entry, and provided both short-term fixes and long-term suggestions</li>
+            <li>Optimized the Word export module for speed and reliability</li>
+            <li>Wrote WinSCP deployment scripts, reducing backend deployment time by over 75%</li>
+          </ul>
         </div>
       </section>
     </div>

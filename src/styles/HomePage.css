@@ -162,7 +162,7 @@
   /*細節*/
   background-color: rgba(152, 152, 152, 0.75);
   font-weight: bold;
-  color: rgb(255, 246, 219);
+  color: rgb(59, 38, 2);
   font-family: 'Orbitron', sans-serif;
   margin-bottom: 80px;
 }
@@ -189,13 +189,28 @@
   /*細節*/
   align-items: center;
   font-size: 30px;
-  font-family: Georgia, serif;
+  font-family: 'Orbitron', sans-serif;
 }
 
 .experience-grid img {
   /*細節*/
   width: 50px;
   height: 50px
+}
+
+.experience-grid ul {
+  text-align: left;
+  padding-left: 2rem;
+  margin: 0;
+  max-width: 100%;
+  width: 100%;
+}
+
+.experience-grid li {
+  text-align: left;
+  list-style-type: disc;
+  line-height: 1.6;
+  font-size: 1.2rem;
 }
 
 /****rwd手機****/
@@ -258,5 +273,14 @@
     flex-direction: column !important;
     padding: 1rem 0;
     min-height: auto;
+  }
+
+  .experience-grid ul {
+    padding-left: 1.5rem;
+  }
+
+  .experience-grid li {
+    font-size: 1rem;
+    line-height: 1.6;
   }
 }
